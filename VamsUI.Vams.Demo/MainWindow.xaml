@@ -1,0 +1,28 @@
+﻿<Window x:Class="VamsUI.Vams.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VamsUI.Vams.Demo"
+        xmlns:ex="clr-namespace:VamsUI.VamsDemo.Tools.Extension"
+        xmlns:langs="clr-namespace:VamsUI.VamsDemo.Properties.Langs"
+        mc:Ignorable="d"
+        xmlns:hc="clr-namespace:VamsUI.Vams.Controls;assembly=VamsUI.Vams.Shared"
+        Title="MainWindow" Height="450" Width="800">
+    <hc:TransitioningContentControl>
+        <hc:ScrollViewer>
+            <hc:UniformSpacingPanel ChildWrapping="Wrap" Spacing="32" Margin="32">
+                <hc:UniformSpacingPanel Orientation="Vertical" Spacing="32">
+                    <WrapPanel>
+                        <StackPanel>
+                            <Button Content="content" Margin="5" Style="{StaticResource ButtonPrimary}"/>
+                            <Button IsEnabled="False" Content="test2" Margin="5" Style="{StaticResource ButtonPrimary}"/>
+                        </StackPanel>
+                    </WrapPanel>
+                </hc:UniformSpacingPanel>
+            </hc:UniformSpacingPanel>
+            
+        </hc:ScrollViewer>
+        
+    </hc:TransitioningContentControl>
+</Window>
