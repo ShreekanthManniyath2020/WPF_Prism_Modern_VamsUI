@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VamsUI.Vams.PrismDemo.Core\VamsUI.Vams.PrismDemo.Core.csproj" />
+    <ProjectReference Include="..\Modules\VamsUI.Vams.PrismDemo.Modules.ModuleName\VamsUI.Vams.PrismDemo.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\VamsUI.Vams.PrismDemo.Services.Interfaces\VamsUI.Vams.PrismDemo.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\VamsUI.Vams.PrismDemo.Services\VamsUI.Vams.PrismDemo.Services.csproj" />
+  </ItemGroup>
+</Project>
